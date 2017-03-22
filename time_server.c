@@ -42,7 +42,7 @@ void main(){
 	while(1){
 		if ((sock2 = accept(sock, (struct sockaddr *)&client, &len)) == -1) //예외처리
 			exit(1); 
-	time(&today); //변수 today에 time함수를 활용하
+	time(&today); 
 
 	/* ctime (const time_t *timer)
 	time_t형 변수인 today를 읽어들여 지역 시간에 맞추어 "날짜, 월, 요일, 현재시간, 현재년도 + 개행 및 NULL값"으로 바꿔준다.*/
